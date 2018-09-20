@@ -10,12 +10,12 @@ import java.util.ArrayList;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
     ArrayList<String> usuario;
-    public Adapter(ArrayList<String> usuario){
-        this.usuario=usuario;
+    public Adapter(ArrayList<Usuario> usuario){
+
     }
 
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.items,null,false);
+        View view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.items,null,false);
         return new ViewHolder(view);
     }
 
